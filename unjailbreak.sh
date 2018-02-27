@@ -68,7 +68,7 @@ rm -f /usr/lib/SBInject.dylib
 rm -rf /Library/MobileSubstrate/
 
 #big fat bootstrap motherfucker
-echo "Removing Cydia bootstrap.. (Please pray)"
+echo "Removing Cydia bootstrap.. (Please pray from here onwards)"
 rm -rf /Applications/Cydia.app/
 rm -f /bin/bash
 rm -f /bin/bunzip2
@@ -364,13 +364,25 @@ rm -f /bin/launchctl
 rm -f /var/tmp/jailbreakd.pid
 rm -f /var/run/jailbreakd.pid
 
+# Resetting hosts file
+echo "Fixing up hosts file.."
+echo "##" > /etc/hosts
+echo "# Host Database" >> /etc/hosts
+echo "#" >> /etc/hosts
+echo "# localhost is used to configure the loopback interface" >> /etc/hosts
+echo "# when the system is booting.  Do not change this entry." >> /etc/hosts
+echo "##" >> /etc/hosts
+echo "127.0.0.1	localhost" >> /etc/hosts
+echo "255.255.255.255	broadcasthost" >> /etc/hosts
+echo "::1             localhost" >> /etc/hosts
+
 #moved to bottom (from big fat bootstrap)
-echo "Removing last tools and clearing ui cache"
+echo "Removing last tools and clearing ui cache.."
 uicache
 rm -f /usr/bin/uicache
 rm -f /bin/sh
 rm -f /bin/rm
 
 echo "All jailbreak related files are removed! (At least all included in the iOS 11 electra JB)"
-echo "Rebooting..."
+echo "Rebooting... (Keep praying my friend!)"
 kill 1
