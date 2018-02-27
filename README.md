@@ -1,5 +1,5 @@
 # delectra
-An full uninstaller script for Coolstars' [Electra](https://github.com/coolstar/electra) iOS 11.0 - 11.1.2 jailbreak.
+An uninstaller script for Coolstars' [Electra](https://github.com/coolstar/electra) iOS 11.0 - 11.1.2 jailbreak.
 
 ## Why?!
 SemiRestore11 is not released yet and I wanted to revert the JB.
