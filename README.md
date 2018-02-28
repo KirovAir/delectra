@@ -26,3 +26,11 @@ cd /electra
 sh unjailbreak.sh
 ```
 4. Wait until the device reboots and then reboot again.
+
+## My tweaks are not working on the betas anymore?!
+1. SSH into your phone as __root__ and run:
+```
+ssh root@192.168.2.123
+mkdir /Library/Frameworks/
+```
+2. Reboot and re-jailbreak with a beta electra version and it should be fixed.
