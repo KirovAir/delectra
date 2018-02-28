@@ -1,3 +1,9 @@
+if [ "$EUID" -ne 0 ]; then
+  echo "ERROR! You are not logged in as root user!"
+  echo "Please login as root user before executing this script."
+  exit
+fi
+
 echo "Electra uninstaller by KirovAir for Electra 1.0x"
 echo "This has ONLY been tested on a few devices and might kill your JB."
 echo "Assuming you have not installed any other jailbreak or modified the rootfs directly yourself, you should be on stock iOS once this is complete"
@@ -76,6 +82,14 @@ rm -rf /etc/dropbear
 rm -f /usr/lib/TweakInject.dylib
 rm -rf /usr/lib/TweakInject/
 rm -rf /Library/TweakInject/
+
+# For who forgot CB. (ehm, me..)
+rm -rf /Applications/circuitbreaker.app/
+rm -f /var/mobile/Library/Preferences/com.thecomputerwhisperer.cbtweaks.plist
+rm -f /var/mobile/Library/Preferences/com.thecomputerwhisperer.cbprefs.plist
+rm -f /var/mobile/Library/Preferences/com.thecomputerwhisperer.CBPrefsList.plist
+rm -f /var/mobile/Library/Preferences/aaa.thecomputerwhisperer.fuku.plist
+rm -f /var/mobile/Library/Preferences/com.thecomputerwhisperer.CircuitBreakerPrefs.plist
 
 #big fat bootstrap motherfucker
 echo "Removing Cydia bootstrap.. (Please pray from here onwards)"
