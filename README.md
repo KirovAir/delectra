@@ -1,6 +1,9 @@
 # delectra
 An uninstaller script for Coolstars' [Electra](https://github.com/coolstar/electra) iOS 11.0 - 11.1.2 jailbreak.
 
+[Dowload link](https://mega.nz/#!IkkgWIBJ!mWVNVYhRes730gF9Nn26mnPs2044olU04uUBGYJerh8)
+or
+[Download from repo](https://raw.githubusercontent.com/KirovAir/delectra/master/unjailbreak.sh)
 ## Why?!
 SemiRestore11 is not released yet and I wanted to revert the JB.
 I followed all filesystem changes from the jailbreak bootstrap files and electra source code and added those to the unjailbreak.sh script. This should undo everything done by the installer, except the apfs snapshot. (So SemiRestore11 should still work when it comes out.)
