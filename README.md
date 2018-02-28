@@ -21,7 +21,6 @@ Wait for SemiRestore to avoid any risk at all.
 2. Put unjailbreak.sh on your phone. (I'd recommend putting it in /electra so it will be removed by itself)
 3. SSH into your phone as __root__ and run unjailbreak.sh from this repo:
 ```
-ssh root@192.168.2.123
 cd /electra
 sh unjailbreak.sh
 ```
@@ -30,7 +29,6 @@ sh unjailbreak.sh
 ## My tweaks are not working on the betas anymore?!
 1. SSH into your phone as __root__ and run:
 ```
-ssh root@192.168.2.123
 mkdir /Library/Frameworks/
 ```
 2. Reboot and re-jailbreak with a beta electra version and it should be fixed.
