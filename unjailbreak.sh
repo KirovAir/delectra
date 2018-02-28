@@ -72,6 +72,11 @@ rm -f /usr/lib/SBInject.dylib
 rm -rf /Library/MobileSubstrate/*
 rm -rf /etc/dropbear
 
+# Non-beta files
+rm -f /usr/lib/TweakInject.dylib
+rm -rf /usr/lib/TweakInject/
+rm -rf /Library/TweakInject/
+
 #big fat bootstrap motherfucker
 echo "Removing Cydia bootstrap.. (Please pray from here onwards)"
 rm -rf /Applications/Cydia.app/
