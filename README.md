@@ -7,19 +7,19 @@ I followed all filesystem changes from the jailbreak bootstrap files and electra
 
 !! DO NOT USE THIS IF YOU DON'T KNOW WHAT YOU ARE DOING !!
 
-
 **Update**
 After a night of reports coming in there is someone on a iPhone 6s that reported it bootlooped his device. He was on iOS 11.1.2 after a futurerestore from 10.1.1. 
-I need to investigate what the issue is, but simply avoid this if you have futurerestored or have an iPhone 6s to be sure.
-Wait for SemiRestore to avoid any risk.
+I need to investigate what the issue is, but simply avoid this if you have futurerestored to be sure.
+Wait for SemiRestore to avoid any risk at all.
 
 ## How to use?
 !! First of all, this has only been tested on MY device. USE AT YOUR OWN RISK !!
 1. Uninstall ALL user installed tweaks.
-2. Put unjailbreak.sh on your phone. (I'd recommend /electra)
+2. Put unjailbreak.sh on your phone. (I'd recommend putting it in /electra so it will be removed by itself)
 3. SSH into your phone as __root__ and run unjailbreak.sh from this repo:
 ```
 ssh root@192.168.2.123
 cd /electra
 sh unjailbreak.sh
 ```
+4. Wait until the device reboots and then reboot again.
