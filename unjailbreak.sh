@@ -503,7 +503,6 @@ uicache
 rm -f /usr/bin/uicache
 rm -f /bin/sh
 rm -f /bin/rm
-mkdir /Library/Frameworks/ # Just to be sure for the betas
 
 echo "All jailbreak related files are removed! (At least all included in the iOS 11 electra JB)"
 echo "Rebooting... (Keep praying my friend!)"
