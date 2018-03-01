@@ -2,7 +2,7 @@
 An uninstaller script for Coolstars' [Electra](https://github.com/coolstar/electra) iOS 11.0 - 11.1.2 jailbreak.
 Please read everything in this readme before you do anything!
 
-[Dowload link](https://dbr.ee/yzAw)
+[Dowload link](https://dbr.ee/6WTQ)
 or
 [Download from repo](https://raw.githubusercontent.com/KirovAir/delectra/master/unjailbreak.sh)
 
