@@ -2,9 +2,9 @@
 An uninstaller script for Coolstars' [Electra](https://github.com/coolstar/electra) iOS 11.0 - 11.1.2 jailbreak.
 Please read everything in this readme before you do anything!
 
-[Dowload link](https://dbr.ee/AIUe)
+[Dowload link](https://github.com/KirovAir/delectra/archive/master.zip)
 or
-[Download from repo](https://raw.githubusercontent.com/KirovAir/delectra/master/unjailbreak.sh)
+[Download raw file](https://raw.githubusercontent.com/KirovAir/delectra/master/unjailbreak.sh)
 
 ## Why?
 SemiRestore11 is not released yet and I wanted to revert the JB. (b10 was a lot more stable for me)
