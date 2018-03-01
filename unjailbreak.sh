@@ -4,13 +4,13 @@ if [ "$EUID" -ne 0 ]; then
   exit
 fi
 
-echo "Electra uninstaller by KirovAir for Electra 1.0x"
+echo "Electra uninstaller by KirovAir for Electra 1.0.x"
 echo "This has ONLY been tested on a few devices and might kill your JB."
-echo "Assuming you have not installed any other jailbreak or modified the rootfs directly yourself, you should be on stock iOS once this is complete"
+echo "Assuming you have not installed any other jailbreak or modified the rootfs directly yourself, you should be on stock iOS once this is complete."
 read -p "Press enter to continue. Press Ctrl + C to exit"
 
-echo "Killing SB."
-killall -HUP SpringBoard
+echo "Killing Cydia.."
+killall Cydia
 
 # exploit generated
 echo "Removing exploit generated.."
@@ -18,7 +18,7 @@ rm -f /var/mobile/test.txt
 rm -f /.bit_of_fun
 
 # cleanupPotentialManualFiles
-echo "Removing potentialmanualfiles.."
+echo "Removing potential manual files.."
 rm -f /bin/bash
 rm -f /authorize.sh
 rm -rf /Applications/jjjj.app/
@@ -388,8 +388,8 @@ rm -f /bin/launchctl
 rm -f /var/tmp/jailbreakd.pid
 rm -f /var/run/jailbreakd.pid
 
-# Toppanga
-echo "Removing possible remaining topanga junk (just to make sure you can rejailbreak in case of emergency)"
+# Topanga
+echo "Removing possible topanga junk (just to make sure you can rejailbreak in case of emergency)"
 rm -f /bin/bzip2_64
 rm -f /bin/hostname
 rm -f /Library/LaunchDaemons/0.reload.plist
