@@ -15,14 +15,15 @@ I followed all filesystem changes from the jailbreak bootstrap files and electra
 This is not recommended by Coolstar or even myself.
 
 ## How to use?
-1. Uninstall ALL user installed packages and tweaks.
+1. Uninstall ALL __user__ installed packages and tweaks.
 2. Put unjailbreak.sh on your phone. (I'd recommend putting it in /electra so it will be removed by itself)
-3. SSH into your phone as __root__ and run unjailbreak.sh from this repo:
+3. Reboot your device and rejailbreak _without_ tweaks enabled. (This should make the process more stable)
+4. SSH into your phone as __root__ and run unjailbreak.sh from this repo:
 ```
 cd /electra
 sh unjailbreak.sh
 ```
-4. Wait until the device reboots and then reboot again.
+5. Wait until the device reboots and then reboot again.
 
 ## User reports
 After a night of reports coming in there is someone on a iPhone 6s that reported it bootlooped his device. He was on iOS 11.1.2 after a futurerestore from 10.1.1. 
@@ -30,7 +31,9 @@ I need to investigate what the issue is, but simply avoid this if you have futur
 
 Wait for SemiRestore to avoid any risk at all since I can _NOT_ guarantee a successful uninstall. Every system is different after multiple tweak installations so make sure you remove every tweak you have installed to be as stock as possible.
 
-__Update 01-03-2018:__ Multiple people on Reddit and [here](https://github.com/KirovAir/delectra/issues/2) have used the script succesfully on various devices. Still, be careful!
+__Update 01-03-2018:__ Multiple people on Reddit and [here](https://github.com/KirovAir/delectra/issues/2) have used the script succesfully on various devices.
+
+__Update 01-04-2018:__ Even futurerestore(d) devices seems to work, as well as the iPhone 6s as seen in the [user reports](https://github.com/KirovAir/delectra/issues/2). Still, be careful!
 
 ## Troubleshooting
 #### My tweaks are not working on the betas anymore?
