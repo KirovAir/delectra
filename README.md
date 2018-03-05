@@ -33,7 +33,7 @@ Wait for SemiRestore to avoid any risk at all since I can _NOT_ guarantee a succ
 
 __Update 01-03-2018:__ Multiple people on Reddit and [here](https://github.com/KirovAir/delectra/issues/2) have used the script succesfully on various devices.
 
-__Update 01-04-2018:__ Even futurerestore(d) devices seems to work, as well as the iPhone 6s as seen in the [user reports](https://github.com/KirovAir/delectra/issues/2). Still, be careful!
+__Update 04-03-2018:__ Even futurerestore(d) devices seems to work, as well as the iPhone 6s as seen in the [user reports](https://github.com/KirovAir/delectra/issues/2). Still, be careful!
 
 ## Troubleshooting
 #### My tweaks are not working on the betas anymore?
