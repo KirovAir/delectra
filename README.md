@@ -26,9 +26,6 @@ sh unjailbreak.sh
 5. Wait until the device reboots and then reboot again.
 
 ## User reports
-After a night of reports coming in there is someone on a iPhone 6s that reported it bootlooped his device. He was on iOS 11.1.2 after a futurerestore from 10.1.1. 
-I need to investigate what the issue is, but simply avoid this if you have futurerestored to be sure.
-
 Wait for SemiRestore to avoid any risk at all since I can _NOT_ guarantee a successful uninstall. Every system is different after multiple tweak installations so make sure you remove every tweak you have installed to be as stock as possible.
 
 __Update 01-03-2018:__ Multiple people on Reddit and [here](https://github.com/KirovAir/delectra/issues/2) have used the script succesfully on various devices.
