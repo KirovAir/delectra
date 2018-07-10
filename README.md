@@ -1,3 +1,7 @@
+## Electra 11.2 - 11.3.1 support
+Delectra can be used to fix/re-jailbreak your device as reported [here](https://github.com/KirovAir/delectra/issues/12).
+I'm not sure all leftover files are removed as of yet so I can not guarantee a clean state. I'll look into the current Electra release ASAP.
+
 # delectra
 An uninstaller script for Coolstars' [Electra](https://github.com/coolstar/electra) iOS 11.0 - 11.1.2 jailbreak.
 Please read everything in this readme before you do anything!
