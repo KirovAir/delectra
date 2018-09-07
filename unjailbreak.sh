@@ -24,6 +24,7 @@ rm -f /authorize.sh
 rm -rf /Applications/jjjj.app/
 rm -rf /Applications/Extender.app/
 rm -rf /Applications/GBA4iOS.app/
+rm -rf /Applications/iCleaner.app/
 rm -rf /Applications/Filza.app/
 rm -rf /Library/dpkg/
 rm -rf /Library/Cylinder/
@@ -65,6 +66,7 @@ rm -f /usr/lib/libsubstitute.dylib
 rm -f /usr/lib/libsubstrate.dylib
 rm -f /usr/lib/libjailbreak.dylib
 rm -f /usr/bin/recache
+rm -f /usr/bin/icleaner
 rm -f /usr/bin/killall
 rm -rf /usr/share/terminfo/*
 rm -f /usr/libexec/sftp-server
