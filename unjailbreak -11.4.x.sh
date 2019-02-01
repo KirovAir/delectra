@@ -491,6 +491,7 @@ echo "Removing last tools and clearing ui cache.."
 uicache
 rm -f /usr/bin/uicache
 rm -rf /bootstrap/
+rm -f /bin/rmdir
 rm -f /bin/sh
 rm -f /bin/rm
 
