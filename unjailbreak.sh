@@ -4,7 +4,7 @@ if [ "$EUID" -ne 0 ]; then
   exit
 fi
 
-echo "Electra 11.4.X uninstaller by SharkLatan"
+echo "Electra 1.2.7 11.4.X uninstaller by SharkLatan"
 echo "Based on the code Electra uninstaller by KirovAir"
 echo "This has ONLY been tested on a few devices and might kill your JB."
 echo "Assuming you have not installed any other jailbreak or modified the rootfs directly yourself, you should be on stock iOS once this is complete."
