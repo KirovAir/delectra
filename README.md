@@ -1,3 +1,16 @@
+## Electra 11.4 - 11.4.1 support 
+Update Delectra for 11.4 - 11.4.1 By SharkLatan based on the KirovAir code<br>
+
+It replaces the old BootStrap Files with newbootstrap to <b>Maybe work</b>.<br>
+
+This code has been generated following the structure used by KirovAir.<br>
+
+<b>I can not be held responsible if the code damages your device.<br>
+
+Use is at your own risk</b>
+
+
+
 ## Electra 11.2 - 11.3.1 support
 Delectra can be used to fix/re-jailbreak your device as reported [here](https://github.com/KirovAir/delectra/issues/12).
 I'm not sure all leftover files are removed as of yet so I can not guarantee a clean state. I'll look into the current Electra release ASAP.
