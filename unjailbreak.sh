@@ -4,7 +4,8 @@ if [ "$EUID" -ne 0 ]; then
   exit
 fi
 
-echo "Electra uninstaller by KirovAir for Electra 1.0.x"
+echo "Electra 11.4.X uninstaller by SharkLatan"
+echo "Based on the code Electra uninstaller by KirovAir"
 echo "This has ONLY been tested on a few devices and might kill your JB."
 echo "Assuming you have not installed any other jailbreak or modified the rootfs directly yourself, you should be on stock iOS once this is complete."
 read -p "Press enter to continue. Press Ctrl + C to exit"
@@ -78,6 +79,7 @@ rm -f /usr/lib/SBInject.dylib
 rm -rf /Library/MobileSubstrate/*
 rm -rf /etc/dropbear
 
+
 # Non-beta files
 rm -f /usr/lib/TweakInject.dylib
 rm -rf /usr/lib/TweakInject/
@@ -91,7 +93,7 @@ rm -f /var/mobile/Library/Preferences/com.thecomputerwhisperer.CBPrefsList.plist
 rm -f /var/mobile/Library/Preferences/aaa.thecomputerwhisperer.fuku.plist
 rm -f /var/mobile/Library/Preferences/com.thecomputerwhisperer.CircuitBreakerPrefs.plist
 
-#big fat bootstrap motherfucker
+# the games begin =D By SharkLatan
 echo "Removing Cydia bootstrap.. (Please pray from here onwards)"
 rm -rf /Applications/Cydia.app/
 rm -f /bin/bash
@@ -125,11 +127,8 @@ rm -f /bin/mktemp
 rm -f /bin/mv
 rm -f /bin/pwd
 rm -f /bin/readlink
-#rm -f /bin/rm #move to bottom?
-rm -f /bin/rmdir
 rm -f /bin/run-parts
 rm -f /bin/sed
-#rm -f /bin/sh #move to bottom?
 rm -f /bin/sleep
 rm -f /bin/stty
 rm -f /bin/su
@@ -181,12 +180,11 @@ rm -f /sbin/update_dyld_shared_cache
 rm -f /usr/bin/apt-key
 rm -f /usr/bin/arch
 rm -f /usr/bin/bashbug
+rm -f /usr/bin/c_rehash
 rm -f /usr/bin/captoinfo
 rm -f /usr/bin/cfversion
 rm -f /usr/bin/clear
 rm -f /usr/bin/cmp
-rm -f /usr/bin/c_rehash
-rm -f /usr/bin/dbsql
 rm -f /usr/bin/db_archive
 rm -f /usr/bin/db_checkpoint
 rm -f /usr/bin/db_deadlock
@@ -202,6 +200,7 @@ rm -f /usr/bin/db_stat
 rm -f /usr/bin/db_tuner
 rm -f /usr/bin/db_upgrade
 rm -f /usr/bin/db_verify
+rm -f /usr/bin/dbsql
 rm -f /usr/bin/df
 rm -f /usr/bin/diff
 rm -f /usr/bin/diff3
@@ -235,9 +234,9 @@ rm -f /usr/bin/find
 rm -f /usr/bin/getconf
 rm -f /usr/bin/getty
 rm -f /usr/bin/gpg
-rm -f /usr/bin/gpg-zip
 rm -f /usr/bin/gpgsplit
 rm -f /usr/bin/gpgv
+rm -f /usr/bin/gpg-zip
 rm -f /usr/bin/gssc
 rm -f /usr/bin/hostinfo
 rm -f /usr/bin/infocmp
@@ -258,7 +257,8 @@ rm -f /usr/bin/lzma
 rm -f /usr/bin/lzmadec
 rm -f /usr/bin/lzmainfo
 rm -f /usr/bin/lzmore
-rm -f /usr/bin/ncurses5-config
+rm -f /usr/bin/ncurses6-config
+rm -f /usr/bin/ncursesw6-config
 rm -f /usr/bin/openssl
 rm -f /usr/bin/pagesize
 rm -f /usr/bin/passwd
@@ -270,6 +270,7 @@ rm -f /usr/bin/scp
 rm -f /usr/bin/script
 rm -f /usr/bin/sdiff
 rm -f /usr/bin/sftp
+rm -f /usr/bin/sort
 rm -f /usr/bin/ssh
 rm -f /usr/bin/ssh-add
 rm -f /usr/bin/ssh-agent
@@ -283,7 +284,6 @@ rm -f /usr/bin/time
 rm -f /usr/bin/toe
 rm -f /usr/bin/tput
 rm -f /usr/bin/tset
-#rm -f /usr/bin/uicache # Remove to bottom?
 rm -f /usr/bin/uiduid
 rm -f /usr/bin/uiopen
 rm -f /usr/bin/unlzma
@@ -315,33 +315,24 @@ rm -f /usr/lib/libapt-private.0.0.dylib
 rm -f /usr/lib/libcrypto.1.0.0.dylib
 rm -f /usr/lib/libcrypto.a
 rm -f /usr/lib/libcrypto.dylib
-rm -f /usr/lib/libcurses.a
-rm -f /usr/lib/libdb-6.2.dylib
-rm -f /usr/lib/libdb-6.dylib
 rm -f /usr/lib/libdb.dylib
+rm -f /usr/lib/libdb_sql.dylib
 rm -f /usr/lib/libdb_sql-6.2.dylib
 rm -f /usr/lib/libdb_sql-6.dylib
-rm -f /usr/lib/libdb_sql.dylib
+rm -f /usr/lib/libdb-6.2.dylib
+rm -f /usr/lib/libdb-6.dylib
 rm -f /usr/lib/libdpkg.a
 rm -f /usr/lib/libdpkg.la
-rm -f /usr/lib/libform.a
-rm -f /usr/lib/libform_g.a
 rm -f /usr/lib/liblzma.a
 rm -f /usr/lib/liblzma.la
-rm -f /usr/lib/libmenu.a
-rm -f /usr/lib/libmenu_g.a
-rm -f /usr/lib/libncurses.a
-rm -f /usr/lib/libncurses_g.a
-rm -f /usr/lib/libpanel.a
-rm -f /usr/lib/libpanel_g.a
 rm -f /usr/lib/libssl.1.0.0.dylib
 rm -f /usr/lib/libssl.a
 rm -f /usr/lib/libssl.dylib
-rm -f /usr/lib/terminfo
 rm -rf /usr/lib/bash/
 rm -rf /usr/lib/engines/*
 rm -rf /usr/lib/pkgconfig/
 rm -rf /usr/lib/ssl/
+rm -f /usr/lib/terminfo
 rm -f /usr/libexec/bigram
 rm -f /usr/libexec/code
 rm -f /usr/libexec/frcode
@@ -368,14 +359,13 @@ rm -f /usr/sbin/vifs
 rm -f /usr/sbin/vipw
 rm -f /usr/sbin/zdump
 rm -f /usr/sbin/zic
-rm -rf /usr/share/bash-completion/
 rm -rf /usr/share/bigboss/
 rm -rf /usr/share/dict/
-rm -rf /usr/share/doc/
 rm -rf /usr/share/dpkg/
 rm -rf /usr/share/gnupg/
 rm -rf /usr/share/tabset/
 rm -rf /usr/share/terminfo/*
+
 
 # electra bootstrap
 echo "Removing electra bootstrap.."
@@ -501,6 +491,7 @@ echo "Removing last tools and clearing ui cache.."
 uicache
 rm -f /usr/bin/uicache
 rm -rf /bootstrap/
+rm -f /bin/rmdir
 rm -f /bin/sh
 rm -f /bin/rm
 
